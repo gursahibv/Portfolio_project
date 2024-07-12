@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="D:\Projects\New Portfolio\Resources\CSS\newsletter.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <title>Newsletter Copy</title>
+</head>
+<body>
+    <header class="header">
+        <div class="socialmedia-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="container_icon"> 
+            <div class="icon">Virk</div>
+        </div>
+        
+        <div class="menu-toggle-dropdown">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+       
+
+        <nav>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#container_services">Services</a></li>
+                    <li><a href="#container_testimonial">Testimonial</a></li>
+                    <li><a href="#container_portfolio">Portfolio</a></li>
+                    <li><a href="#container_contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="container_title">
+              <title> Newsletter Copy </title>
+        </div>  
+        
+          <div class="container_about">
+            <div class="container_photo"> 
+            <img src="https://cdn.pixabay.com/photo/2020/10/15/06/59/envelope-5656170_640.jpg" alt="Newsletter">  
+            </div>
+            <div id="about" class="about">
+              <h1> Newsletters </h1>
+              <p> In the ever-crowded world of email inboxes, crafting compelling
+                newsletter copy is more important than ever. It's the voice that 
+                connects with your audience, educates them, and ultimately converts 
+                them into loyal customers.  Think of it as your secret weapon – a 
+                powerful tool to  nurture leads, drive engagement, and achieve your
+                marketing goals.</p>
+            </div>
+          </div>
+        <div class="container2">
+            
+            
+            <div class=" features">
+                <h1> Features </h1> 
+               <p>
+                <strong> Targeted Content :</strong> Newsletters are tailored 
+                to customer's intrest, ensuring relevance and maximizing engagement.<br><br>
+                <strong>Actionable Insights:</strong> It helps to gain valueable knowledge
+                and practical tips to help readers achieve their goals.<br><br>
+                <strong> Exclusive Offers & Early Access:</strong> Offers seasonal
+                discounts, promotions and insights of new products optimize customer
+                relations.
+               </p>
+
+            </div>
+            <div class="container_photo">
+                <img src="https://cdn.pixabay.com/photo/2021/09/07/03/06/bulb-6602798_640.png" alt="2nd photo">
+            </div>
+            
+        </div>
+     
+        
+    </main>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle-dropdown');
+        const dropdownContent = document.querySelector('.dropdown-content');
+
+        menuToggle.addEventListener('click', function() {
+            dropdownContent.classList.toggle('show');
+        });
+
+        window.addEventListener('click', function(event) {
+            if (!menuToggle.contains(event.target) && !dropdownContent.contains(event.target)) {
+                dropdownContent.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>

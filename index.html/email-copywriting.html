@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="D:\Projects\New Portfolio\Resources\CSS for Email Copy\email.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <title>Email Copywriting</title>
+</head>
+<body>
+    <header class="header">
+        <div class="socialmedia-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="container_icon"> 
+            <div class="icon">Virk</div>
+        </div>
+        
+        <div class="menu-toggle-dropdown">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+       
+
+        <nav>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#container_services">Services</a></li>
+                    <li><a href="#container_testimonial">Testimonial</a></li>
+                    <li><a href="#container_portfolio">Portfolio</a></li>
+                    <li><a href="#container_contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="container_title">
+              <title> Email Copywriting </title>
+        </div>  
+        
+          <div class="container_about">
+            <div class="container_photo"> 
+                <img src="https://images.pexels.com/photos/2882555/pexels-photo-2882555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Email Copywriting">  
+            </div>
+            <div id="about" class="about">
+                <h1> Email Marketting  </h1>
+               <p> The most effective way of reaching potential customers to increase
+             sales leads in a complete professional manner is what email-
+             marketting is all about.<br><br>  It's a powerful tool to nurture 
+             customer relationships, build brand loyalty, and ultimately drive sales. 
+             Receiving relevant communication in their inbox allows businesses to build
+             brand awareness and establish themselves as a trusted resource.<br>
+             <blockquote> "Permission marketing is the privilege (not the right) of
+             delivering anticipated, personal and relevant messages to people who
+             want to receive them." <cite> Seth Godin</cite></blockquote>
+            </p>
+          </div>
+          </div>
+        <div class="container2">
+            
+            
+            <div class="roles-marketting">
+                <h1> Importance </h1> 
+                <ul>
+                    <li> Targeted Reach</li>
+                    <li> Cost-Effective Marketting</li>
+                    <li> Measureable Results</li>
+                    <li> Relationship Building</li>
+                    <li> Scalability & Automation</li>
+                </ul>
+
+            </div>
+            <div class="container_photo">
+                <img src="https://cdn.pixabay.com/photo/2020/10/11/17/19/graph-5646462_1280.jpg" alt="2nd photo">
+            </div>
+            
+        </div>
+        <div class="container3">
+            <div class="container_photo">
+                <img src="https://cdn.pixabay.com/photo/2018/03/26/14/07/space-3262811_1280.jpg" alt=" Email Campaigns">
+            </div>
+            <div class="email-campaigns">
+                <h1> Email Campaigns </h1>
+                <p>
+                    Boost customer engagement and conversions with targeted email marketing 
+                    campaigns!  This <strong> cost-effective</strong> channel offers exceptional reach and
+                    measurable results. <strong>  Nurture leads </strong> with informative content, win back
+                    inactive subscribers with <strong> re-engagement campaigns</strong>, and leverage 
+                     <strong> email marketing automation</strong> for streamlined workflows. <strong> SEO-optimized
+
+                    subject lines </strong> ensure inbox placement, while targeted email 
+                    segmentation maximizes engagement.
+                </p>
+            </div>
+        </div>
+        
+    </main>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle-dropdown');
+        const dropdownContent = document.querySelector('.dropdown-content');
+
+        menuToggle.addEventListener('click', function() {
+            dropdownContent.classList.toggle('show');
+        });
+
+        window.addEventListener('click', function(event) {
+            if (!menuToggle.contains(event.target) && !dropdownContent.contains(event.target)) {
+                dropdownContent.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>

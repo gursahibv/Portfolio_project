@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="D:\Projects\New Portfolio\Resources\CSS\landing-page.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <title>Landing Page</title>
+</head>
+<body>
+    <header class="header">
+        <div class="socialmedia-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="container_icon"> 
+            <div class="icon">Virk</div>
+        </div>
+        
+        <div class="menu-toggle-dropdown">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+       
+
+        <nav>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#container_services">Services</a></li>
+                    <li><a href="#container_testimonial">Testimonial</a></li>
+                    <li><a href="#container_portfolio">Portfolio</a></li>
+                    <li><a href="#container_contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="container_title">
+              <title> Landing Page </title>
+        </div>  
+        
+          <div class="container_about">
+            <div class="container_photo"> 
+            <img src="https://cdn.pixabay.com/photo/2023/02/15/10/22/backlinks-7791410_1280.jpg" alt="Landing Page">  
+            </div>
+            <div id="about" class="about">
+              <h1> Landing Pages: Your Conversion Powerhouse  </h1>
+              <p>Landing pages are laser-focused <strong>  web pages</strong> designed to capture leads 
+                and drive conversions for your business. <br><br>Unlike your main website, 
+                they eliminate distractions and guide visitors towards a <strong> specific action</strong>  
+                , like making a purchase, downloading an ebook, or subscribing
+                 to a newsletter.
+                  </p>
+
+                 
+          </div>
+          </div>
+        <div class="container2">
+            
+            
+            <div class=" features">
+                <h1>  Turn website visitors into leads! </h1>  Craft laser-focused landing pages 
+                    with <strong> clear CTAs & SEO-optimized </strong> content.<br><br> Watch conversions skyrocket
+                     with targeted messaging and A/B testing. <strong> Dominate lead gen </strong> with 
+                     landing pages that convert! 
+               <p></p>
+
+               
+
+            </div>
+            <div class="container_photo">
+                <img src="https://cdn.pixabay.com/photo/2018/05/18/15/30/web-design-3411373_1280.jpg" alt="Landing Page">
+            </div>
+            
+        </div>
+     
+        
+    </main>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle-dropdown');
+        const dropdownContent = document.querySelector('.dropdown-content');
+
+        menuToggle.addEventListener('click', function() {
+            dropdownContent.classList.toggle('show');
+        });
+
+        window.addEventListener('click', function(event) {
+            if (!menuToggle.contains(event.target) && !dropdownContent.contains(event.target)) {
+                dropdownContent.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>
