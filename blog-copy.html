@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="resources\styles.css\blogcopy.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <title>Blog Copy</title>
+</head>
+<body>
+    <header class="header">
+        <div class="socialmedia-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="container_icon"> 
+            <div class="icon">Virk</div>
+        </div>
+        
+        <div class="menu-toggle-dropdown">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+       
+
+        <nav>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#container_services">Services</a></li>
+                    <li><a href="#container_testimonial">Testimonial</a></li>
+                    <li><a href="#container_portfolio">Portfolio</a></li>
+                    <li><a href="#container_contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="container_title">
+              <title> Blog Copy </title>
+        </div>  
+        
+          <div class="container_about">
+            <div class="container_photo"> 
+            <img src="https://cdn.pixabay.com/photo/2014/08/27/08/11/blogging-428955_1280.jpg" alt="Blog">  
+            </div>
+            <div id="about" class="about">
+              <h1> Blogs: A Treasure Trove of Information </h1>
+              <p>Blogs are your one-stop shop for insightful content, industry 
+                trends, and practical tips delivered in a captivating way. 
+                <br><br> Exploring a range of topics relevant to [your niche] to empower your 
+                suscribers with the knowledge they crave to consume to achieve their
+                 goals. 
+
+                Whether you're a seasoned professional or just starting 
+                your journey, blogs offers something for everyone.  
+                <br><br>We leverage SEO best practices to ensure our content ranks
+                high in search results, making it easy to find
+                the information customer seek. </p>
+          </div>
+          </div>
+        <div class="container2">
+            
+            
+            <div class=" features">
+                <h1> Features </h1> 
+               <ul>
+                <li> Content Marketing Powerhouse </li>
+                <li> Lead Generation & Nurturing </li>
+                <li> Brand Awareness</li>
+                <li> Improved Customer Engagement</li>
+                <li> Valuable Market Research & Insights</li>
+                <li> Cost-Effective Marketing with High ROI</li>
+
+               </ul>
+
+            </div>
+            <div class="container_photo">
+                <img src="https://cdn.pixabay.com/photo/2020/04/04/03/42/book-5000692_1280.png" alt="Blog Importance">
+            </div>
+            
+        </div>
+     
+        
+    </main>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle-dropdown');
+        const dropdownContent = document.querySelector('.dropdown-content');
+
+        menuToggle.addEventListener('click', function() {
+            dropdownContent.classList.toggle('show');
+        });
+
+        window.addEventListener('click', function(event) {
+            if (!menuToggle.contains(event.target) && !dropdownContent.contains(event.target)) {
+                dropdownContent.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>
