@@ -52,11 +52,12 @@ body {
 
 
 .container_icon {
-    width: 30%;
+    width: 80%;
     display: flex;
     justify-content: flex-end;
     margin:0 auto;
     padding: 20px;
+    
  
 }
 
@@ -84,7 +85,7 @@ body {
 .menu-toggle-dropdown:hover{
     cursor: pointer;
     transform: scale(1.2); /* Zoom in on hover */
-    color: #b52400; /* Change color on hover */
+    
 }
     
 .icon a {
@@ -98,9 +99,10 @@ body {
 }
 
 nav {
-    width: 50%;
+    width: 100%;
     height: auto;
     position: relative;
+    
    
 }
 
@@ -118,7 +120,7 @@ nav {
 
 .dropdown-content a {
     text-decoration: none;
-    color: black;
+    color: rgba(209, 255, 220, 0.621);
     font-size: 20px;
     font-weight: 600;
     transition: transform 0.3s ease, color 0.3s ease;
@@ -135,7 +137,7 @@ nav li {
 
 nav li a:hover {
     cursor: pointer;
-    color: rgb(1, 1, 68);
+    color: rgb(255, 133, 12);
     
 }
 
@@ -253,6 +255,12 @@ h2 {
     top: -50%;
     color: rgb(235, 234, 234);
     opacity: 0;
+    text-decoration: none;
+    
+    
+}
+
+a{
     text-decoration: none;
 }
 
@@ -374,6 +382,9 @@ footer .footer-container {
 
 /* Responsive design */
 @media (max-width: 768px) {
+    *{
+        box-sizing: border-box;
+    }
     .header {
         flex-wrap: wrap;
     }
@@ -381,11 +392,37 @@ footer .footer-container {
         width: 100%;
         justify-content: center;
         margin-bottom: 10px;
+
     }
     .container_icon {
         width: 100%;
         justify-content: center;
+        margin-top: -20px;
     }
+
+    nav .dropdown-content{
+        
+        margin-top: -40px;
+    
+        
+
+        
+    }
+    
+    
+    .dropdown-content a {
+        display: block;
+      
+        font-size: 28px;
+        display: block;
+        position:relative;
+        top: -120px;
+        float: right;
+        
+        
+        
+    }
+    
     .container_about .container_photo img,
     .contact-form-container img {
         width: 100%;
@@ -400,8 +437,28 @@ footer .footer-container {
         flex-direction: column;
         align-items: center;
     }
+    .container_services a h2 {
+        position: relative;
+        bottom: 200px;
+
+
+    }
     .container_title .title, cite {
         font-size: 50px;
+        
+       line-height: 50px;
+       position: relative;
+       top: -300px;
+    }
+
+    h2 {
+        position: relative;
+        width: 50%;
+        margin: 0 auto;
+        top: -50%;
+        color: rgb(235, 234, 234);
+        opacity: 0;
+        text-decoration: none;
     }
 }
 

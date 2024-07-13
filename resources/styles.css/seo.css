@@ -18,10 +18,10 @@ body {
     max-height: 150px;
     background-color: rgb(58, 83, 121);
     margin: -150px auto;
-    box-shadow:0px 0px 40px 0px blanchedalmond; 
+    box-shadow: 0px 0px 40px 0px blanchedalmond; 
 }
 
-.socialmedia-icons{
+.socialmedia-icons {
     display: flex;
     justify-content: space-evenly;
     gap: 15px;
@@ -40,7 +40,7 @@ body {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.socialmedia-icons i:hover  {
+.socialmedia-icons i:hover {
     transform: scale(1.2); /* Zoom in on hover */
     color: #b52400; /* Change color on hover */
 }
@@ -49,7 +49,7 @@ body {
     width: 30%;
     display: flex;
     justify-content: flex-end;
-    margin:0 auto;
+    margin: 0 auto;
     padding: 20px;
 }
 
@@ -64,29 +64,32 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    z-index:2000;
+    z-index: 2000;
     transition: transform 0.3s ease, color 0.3s ease;
 }
-  
+
 .menu-toggle-dropdown .bar {
     width: 100%; 
     height: 4px; 
     background-color: black; 
 }
-.menu-toggle-dropdown:hover{
+
+.menu-toggle-dropdown:hover {
     cursor: pointer;
     transform: scale(1.2); /* Zoom in on hover */
     color: #b52400; /* Change color on hover */
 }
-    
-.icon {
+
+.icon  {
     font-family: 'Playwrite GB S';
     font-style: bold ;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 900;
     font-display: swap;
-    color: rgb(7, 19, 85);
+    color: rgb(233, 234, 241);
+    text-decoration: none;
 }
+
 
 nav {
     width: 50%;
@@ -107,7 +110,7 @@ nav {
 
 .dropdown-content a {
     text-decoration: none;
-    color: black;
+    color: rgba(209, 255, 220, 0.621);
     font-size: 20px;
     font-weight: 600;
     transition: transform 0.3s ease, color 0.3s ease;
@@ -121,7 +124,7 @@ nav li {
 
 nav li a:hover {
     cursor: pointer;
-    color: rgb(1, 1, 68);
+    color: rgb(255, 133, 12);
 }
 
 .container_title {
@@ -165,14 +168,10 @@ nav li a:hover {
 
 .container_about .about {
     width: 400px;
+    font-size: 20px;
 }
 
-.container_about .about blockquote{
-    width: 100%;
-    margin: 0 auto;
-}
-
-.container2{
+.container2 {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -183,80 +182,114 @@ nav li a:hover {
     margin: 0 auto;
 }
 
-.container2 .container_photo img{
+.container2 .container_photo img {
     width: 400px;
     height: auto;
     padding: 20px;
 }
 
-.roles-marketting{
-    width: 400px;
-    display: block;
-    align-content: center;
-    font-size: 25px;
-}
-
-.container3{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-    padding: 40px;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: 0 auto;
-    align-content: center;
-    align-items: center;
-}
-
-.container3 .container_photo img{
-    width: 400px;
-    height: auto;
-    padding: 20px;
-}
-
-.email-campaigns{
+.features {
     width: 400px;
     display: block;
     align-content: center;
     font-size: 20px;
-    padding: 20px;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
+/* Media Queries */
+@media (max-width: 1024px) {
+    nav .dropdown-content{
+        
+        margin-top: -40px;
+    
+        
+
+        
+    }
+    
+    
+    .dropdown-content a {
+        display: block;
+      
+        font-size: 28px;
+        display: block;
+        position:relative;
+        top: -120px;
+        float: right;
+        
+        
+        
+    }
     .header {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
         padding: 10px;
-        margin: -100px auto;
-        max-height: auto;
     }
-    .socialmedia-icons {
-        width: 100%;
-        justify-content: center;
-        margin-bottom: 10px;
-    }
-    .container_icon {
+    .socialmedia-icons, .container_icon, nav {
         width: 100%;
         justify-content: center;
     }
     .container_title {
-        margin-top: 100px;
+        flex-direction: column;
+        align-items: center;
     }
     .title {
-        font-size: 50px;
-        -webkit-text-stroke: 1px #000;
+        font-size: 60px;
+        text-align: center;
     }
-    .container_about .container_photo img,
-    .container2 .container_photo img,
-    .container3 .container_photo img {
+    .container_about .container_photo img, .container2 .container_photo img {
         width: 100%;
+    }
+    .container_about .about, .features {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 40px;
+    }
+    .header {
         padding: 10px;
     }
-    .container_about .about,
-    .container2 .roles-marketting,
-    .container3 .email-campaigns {
+    .socialmedia-icons i {
+        font-size: 30px;
+    }
+    .container_about, .container2 {
+        
+        padding: 20px;
+    }
+    .container_about .about, .features {
+        font-size: 18px;
+    }
+    .container_about .container_photo img, .container2 .container_photo img {
         width: 100%;
-        padding: 10px;
+    }
+ 
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 30px;
+    }
+    .socialmedia-icons i {
+        font-size: 25px;
+    }
+    .container_about .about, .features {
+        font-size: 16px;
+    }
+    .header {
+        padding: 5px;
+    }
+    .menu-toggle-dropdown {
+        width: 30px;
+        height: 30px;
+    }
+    .menu-toggle-dropdown .bar {
+        height: 3px;
+    }
+    .container2{
+
+        flex-wrap: wrap;
     }
 }
